@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solutions</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css and daisy UI -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              xs: "411px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- custom styles -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
+  </head>
+  <body class="space-y-[120px]">
+    <div class="">
+      <div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div
+          class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-[500px]"
+        >
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <span
+              class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl"
+              >First Slide</span
+            >
+            <img
+              src="./images/slider-3.jpg"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+            <div class="bg-black w-full h-full absolute opacity-30"></div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <p class="text-white">Hello I am abdul mobin</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./images/slider-2.jpg"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+            <div class="bg-black w-full h-full absolute opacity-40"></div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <p class="text-white">Hello I am abdul mobin</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="./images/slider-1.jpg"
+              class="block absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+              alt="..."
+            />
+            <div class="bg-black w-full h-full absolute opacity-30"></div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <p class="text-white">Hello I am abdul mobin</p>
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+        >
+          <button
+            type="button"
+            class="w-10 h-1 rounded-lg dark:bg-white"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-10 h-1 rounded-lg"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-10 h-1 rounded-lg"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 group-hover:bg-white/50 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="hidden">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 group-hover:bg-white/50 group-focus:outline-none"
+          >
+            <svg
+              class="w-5 h-5 text-white sm:w-6 sm:h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="hidden">Next</span>
+          </span>
+        </button>
+      </div>
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    </div>
+
+    <!-- faq section start -->
+    <section class="px-4">I am mobin</section>
+    <!-- faq section end -->
+  </body>
+</html>
